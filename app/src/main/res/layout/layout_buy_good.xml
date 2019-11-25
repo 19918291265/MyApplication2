@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/layout_black">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/picture"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/buy_buy_1"
+            android:padding="16dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="奥里给"
+                android:textSize="30dp"
+                android:id="@+id/name">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@+id/name"
+                android:textSize="25dp"
+                android:text="123元/件"
+                android:id="@+id/price"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/price"
+                android:text="商品简介：12313213132啊对2哀思都3哀思对哀思对2阿萨1阿的安守21都哀思对2哀思对哀思都3"
+                android:textSize="15dp"
+                android:id="@+id/introduce">
+
+            </TextView>
+
+
+        </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/buy_buy_1">
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:id="@+id/buy_buy"
+            android:background="@drawable/layout_black">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="40dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/tv_buy_quantity">
+            </TextView>
+
+        </RelativeLayout>
+        <RelativeLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_toRightOf="@+id/buy_buy"
+
+            >
+          <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="+"
+            android:textSize="30dp"
+              android:id="@+id/layout_add"
+              android:background="@drawable/in_little_blue"
+              android:layout_marginLeft="5dp"
+              android:layout_centerVertical="true">
+          </Button>
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="—"
+                android:background="@drawable/in_little_blue"
+                android:textSize="30dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/layout_add"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/layout_minus">
+            </Button>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/layout_minus"
+                android:paddingHorizontal="20dp">
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:id="@+id/buy_buy_buy"
+    android:text="立即购买"
+    android:background="@drawable/in_yellow_round"
+    android:textSize="20dp">
+</Button>
+       </RelativeLayout>
+       </RelativeLayout>
+       </RelativeLayout>
+       </RelativeLayout>
+</LinearLayout>
+

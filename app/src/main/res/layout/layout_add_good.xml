@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/in_blue_square">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar_title"
+            android:layout_centerInParent="true"
+            android:text="新品上架"
+            android:textSize="40dp"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_and_et"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/layout_newshop_1"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商品名称"
+                android:id="@+id/tv_register_account"
+                android:textSize="25dp"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="0dp"
+                android:singleLine="true"
+                android:id="@+id/name"
+                android:layout_toRightOf="@+id/tv_register_account"
+                android:hint="" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/layout_newshop_2"
+            android:layout_below="@+id/layout_newshop_1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:text="商品单价"
+                android:inputType="number"
+                android:id="@+id/tv_register_cipher"
+                android:textSize="25dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/price"
+                android:singleLine="true"
+                android:layout_toRightOf="@+id/tv_register_cipher"
+                android:hint=""/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/layout_newshop_3"
+            android:layout_below="@+id/layout_newshop_2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:text="商品简介"
+                android:id="@+id/tv_register_1"
+                android:textSize="25dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:id="@+id/introduce"
+                android:layout_toRightOf="@+id/tv_register_1"
+                android:hint=""/>
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_newshop_3"
+            android:id="@+id/layout_newshop_4">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1">
+                <Button
+                    android:layout_width="135dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:text="上传图片"
+                    android:background="@drawable/in_blue_round"
+                    android:id="@+id/addpicture"
+                    android:textSize="25dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1">
+                <Button
+                    android:layout_width="135dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/addgood"
+                    android:layout_centerInParent="true"
+                    android:text="上架商品"
+                    android:background="@drawable/in_blue_round"
+                    android:textSize="25dp"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

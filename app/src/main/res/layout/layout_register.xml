@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+
+        android:background="@drawable/in_blue">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册账号"
+            android:textSize="35dp"
+            android:layout_centerInParent="true"/>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_and_et">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/layout_register_account"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户名"
+                android:id="@+id/tv_register_account"
+                android:textSize="25dp"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:layout_marginLeft="0dp"
+                android:id="@+id/ev_register_account"
+                android:layout_toRightOf="@+id/tv_register_account"
+                android:hint="（4~10个数字）"
+                android:inputType="number"
+                android:maxLength = "10" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/layout_register_cipher"
+            android:layout_below="@+id/layout_register_account">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="25dp"
+                android:text="密码"
+                android:id="@+id/tv_register_cipher"
+                android:textSize="25dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:layout_height="match_parent"
+                android:id="@+id/ev_register_cipher"
+                android:layout_toRightOf="@+id/tv_register_cipher"
+                android:hint="（4~15位，由字母和数字组成）"
+                android:inputType="textPassword"
+                android:maxLength = "15" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/layout_register_name"
+            android:layout_below="@+id/layout_register_cipher">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="25dp"
+                android:text="昵称"
+                android:id="@+id/tv_register_name"
+                android:textSize="25dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:id="@+id/ev_register_name"
+                android:layout_toRightOf="@+id/tv_register_name"
+                android:hint="（至多8个字符）"
+                android:maxLength = "8" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/layout_register_introduce"
+            android:layout_below="@+id/layout_register_name">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="25dp"
+                android:text="简介"
+                android:id="@+id/tv_register_introduce"
+                android:textSize="25dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/ev_register_introduce"
+                android:singleLine="true"
+                android:layout_toRightOf="@+id/tv_register_introduce"
+                android:hint="（展现一下你的个性）"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:id="@+id/layout_register_address"
+            android:layout_below="@+id/layout_register_introduce">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="25dp"
+                android:text="地址"
+                android:id="@+id/tv_register_address"
+                android:textSize="25dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:id="@+id/ev_register_address"
+                android:layout_toRightOf="@+id/tv_register_address"
+                android:hint="（输入你的详细地址）"
+                 />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/layout_register_address"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/hhh">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1">
+                <Button
+                    android:layout_width="135dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:text="上传头像"
+                    android:id="@+id/bt_register_picture"
+                    android:background="@drawable/in_blue"
+                    android:textSize="20dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1">
+                <Button
+                    android:layout_width="135dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/take_photo"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/in_blue"
+                    android:text="拍照获得头像"
+                    android:textSize="20dp"/>
+
+            </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/hhh">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bt_register_register"
+                    android:background="@drawable/in_blue"
+                    android:text="- 完成注册 -"
+                    android:textSize="25dp"
+                   android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

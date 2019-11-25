@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/layout_littleblue_side">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/layout_black"
+            android:id="@+id/eachshop_picture"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/picture"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/eachshop_picture">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/eachshop_name">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/shop1"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/eachshop_shop">
+                </ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_toRightOf="@+id/eachshop_shop"
+                    android:layout_centerVertical="true"
+                    android:text="123的店铺"
+                    android:textSize="40dp"
+                    android:id="@+id/owner"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/eachshop_name"
+                android:id="@+id/eachshop_introduce"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/introduce"
+                    android:text="店铺简介：123154521431541323412151213135132451325132131241331"
+                    android:textSize="20dp"/>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/eachshop_introduce"
+                android:id="@+id/bt_bt">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <Button
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:text="修改店铺信息"
+                        android:textSize="20dp"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/change"
+                        android:background="@drawable/in_blue_round">
+                    </Button>
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <Button
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:text="上架新商品"
+                        android:textSize="20dp"
+                        android:background="@drawable/in_blue_round"
+                        android:id="@+id/manage">
+                    </Button>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bt_bt"
+                android:layout_marginTop="10dp"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <Button
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:text="删除该店"
+                        android:textSize="20dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/in_blue_round"
+                        android:id="@+id/delete">
+                    </Button>
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <Button
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:text="查看商品"
+                        android:textSize="20dp"
+                        android:background="@drawable/in_blue_round"
+                        android:id="@+id/enter">
+                    </Button>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+</LinearLayout>
